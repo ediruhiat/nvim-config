@@ -7,6 +7,8 @@ local servers = {
 	"bashls",
 	"jsonls",
 	"yamlls",
+  "tailwindcss",
+  "omnisharp"
 }
 
 local settings = {

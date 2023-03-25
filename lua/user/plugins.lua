@@ -62,6 +62,7 @@ return packer.startup(function(use)
 
   -- Colorschemes
   use { "folke/tokyonight.nvim", commit = "66bfc2e8f754869c7b651f3f47a2ee56ae557764" }
+  use { "shaunsingh/nord.nvim", commit = "be318c83a233cb877ba08faa15380a54241272b1" }
   use { "lunarvim/darkplus.nvim", commit = "13ef9daad28d3cf6c5e793acfc16ddbf456e1c83" }
 
   -- cmp plugins
@@ -100,6 +101,9 @@ return packer.startup(function(use)
   use { "mfussenegger/nvim-dap", commit = "6b12294a57001d994022df8acbe2ef7327d30587" }
   use { "rcarriga/nvim-dap-ui", commit = "1cd4764221c91686dcf4d6b62d7a7b2d112e0b13" }
   use { "ravenxrz/DAPInstall.nvim", commit = "8798b4c36d33723e7bba6ed6e2c202f84bb300de" }
+
+  -- vim surround
+  use { "tpope/vim-surround", commit = "3d188ed2113431cf8dac77be61b842acb64433d9" }
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
