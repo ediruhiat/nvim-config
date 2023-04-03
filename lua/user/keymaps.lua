@@ -73,7 +73,6 @@ keymap("x", "<leader>/", "<esc><cmd>lua require('Comment.api').toggle.linewise(v
 
 -- DAP
 keymap("n", "<leader>db", "<cmd>lua require'dap'.toggle_breakpoint()<cr>", opts)
-keymap("n", "<M-m>", "<cmd>lua require'dap'.toggle_breakpoint()<cr>", opts)
 keymap("n", "<leader>dc", "<cmd>lua require'dap'.continue()<cr>", opts)
 keymap("n", "<leader>di", "<cmd>lua require'dap'.step_into()<cr>", opts)
 keymap("n", "<leader>do", "<cmd>lua require'dap'.step_over()<cr>", opts)
@@ -88,6 +87,8 @@ keymap("n", "<leader>lf", "<cmd>lua vim.lsp.buf.format{ async = true }<cr>", opt
 
 -- Diagnostics
 keymap("n", "<M-l>", ":lua vim.diagnostic.open_float()<cr>", opts)
+keymap("n", "<M-M>", ":lua vim.diagnostic.goto_prev()<cr>", opts)
+keymap("n", "<M-m>", ":lua vim.diagnostic.goto_next()<cr>", opts)
 
 -- Navigation
 keymap("n", "<M-j>", ":m .+1<cr>==", opts)

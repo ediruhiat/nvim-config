@@ -105,6 +105,20 @@ return packer.startup(function(use)
   -- vim surround
   use { "tpope/vim-surround", commit = "3d188ed2113431cf8dac77be61b842acb64433d9" }
 
+  -- whichkey
+  use {
+    "folke/which-key.nvim",
+    config = function()
+      vim.o.timeout = true
+      vim.o.timeoutlen = 300
+      require("which-key").setup {
+        -- your configuration comes here
+        -- or leave it empty to use the default settings
+        -- refer to the configuration section below
+      }
+    end
+  }
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
